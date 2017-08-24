@@ -5,4 +5,30 @@
 </ion-header>
 
 <ion-content padding>
+
+  <!-- contact card -->
+  <ion-card class="card-user-info">
+
+    <ion-card-header>
+      Praveen Ghimire
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>pghimir@gmail.com</p>
+      <p>Address: 123 Main. St.</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <!--
+    - attribute directive
+    - structural directive
+    - component type directive / just like component
+  -->
+
+  <ion-item *ngFor="let person of persons" detail-push color="danger">
+    <p>{{person.name}}</p>
+    <p>{{person.address}}</p>
+  </ion-item>
+
 </ion-content>
