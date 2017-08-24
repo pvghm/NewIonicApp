@@ -9,6 +9,7 @@ import {Person} from "../../models/Person";
 export class HomePage {
 
   persons: Person[] = [];
+  personDetails: Person;
 
   constructor(public navCtrl: NavController) {
     this.persons =  [
@@ -16,6 +17,13 @@ export class HomePage {
       new Person('Prashant', 'prashant@gmail.com', '456 Main St.'),
       new Person('John', 'john@gmail.com', '789 Main St.'),
     ];
+
+    this.personDetails = this.persons[0];
+
+  }
+
+  onPersonClick(person) {
+    this.personDetails = person;
   }
 
 

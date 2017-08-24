@@ -7,15 +7,18 @@
 <ion-content padding>
 
   <!-- contact card -->
+
+
   <ion-card class="card-user-info">
 
     <ion-card-header>
-      Praveen Ghimire
+      Person Details
     </ion-card-header>
 
     <ion-card-content>
-      <p>pghimir@gmail.com</p>
-      <p>Address: 123 Main. St.</p>
+      <p>{{personDetails.name}}</p>
+      <p>{{personDetails.email}}</p>
+      <p>{{personDetails.address}}</p>
     </ion-card-content>
 
   </ion-card>
@@ -25,8 +28,10 @@
     - structural directive
     - component type directive / just like component
   -->
+  <ion-item *ngFor="let person of persons"
+            (click)="onPersonClick(person)"
+            detail-push color="primary">
 
-  <ion-item *ngFor="let person of persons" detail-push color="danger">
     <p>{{person.name}}</p>
     <p>{{person.address}}</p>
   </ion-item>
