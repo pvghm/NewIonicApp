@@ -32,7 +32,9 @@
     </ion-card-header>
 
     <ion-card-content>
-      <p>{{personDetails.name}}</p>
+      <p>
+        <input [(ngModel)]="personDetails.name">
+      </p>
       <p>{{personDetails.email}}</p>
       <p>{{personDetails.address}}</p>
     </ion-card-content>
