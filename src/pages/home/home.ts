@@ -6,13 +6,6 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
   constructor(public navCtrl: NavController) {
   }
-
-  onGoToClick (){
-    console.log('lets go to detials page!');
-    this.navCtrl.push('DetailsPage');
-  }
-
 }
