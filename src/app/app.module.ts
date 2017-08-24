@@ -9,10 +9,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
+  // declarables:  pages , components, directives,  pipes, service, provider ...
   declarations: [
     MyApp,
     HomePage,
   ],
+  // modules ... declared using @NgModule
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
