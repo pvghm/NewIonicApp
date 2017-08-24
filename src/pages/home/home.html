@@ -6,22 +6,7 @@
 
 <ion-content padding>
 
-  <!-- contact card -->
 
-
-  <ion-card class="card-user-info">
-
-    <ion-card-header>
-      Person Details
-    </ion-card-header>
-
-    <ion-card-content>
-      <p>{{personDetails.name}}</p>
-      <p>{{personDetails.email}}</p>
-      <p>{{personDetails.address}}</p>
-    </ion-card-content>
-
-  </ion-card>
 
   <!--
     - attribute directive
@@ -35,5 +20,23 @@
     <p>{{person.name}}</p>
     <p>{{person.address}}</p>
   </ion-item>
+
+
+  <!-- contact card -->
+
+
+  <ion-card class="card-user-info" *ngIf="personDetails">
+
+    <ion-card-header>
+      Person Details
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{personDetails.name}}</p>
+      <p>{{personDetails.email}}</p>
+      <p>{{personDetails.address}}</p>
+    </ion-card-content>
+
+  </ion-card>
 
 </ion-content>

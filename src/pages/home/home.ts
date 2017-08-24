@@ -18,8 +18,6 @@ export class HomePage {
       new Person('John', 'john@gmail.com', '789 Main St.'),
     ];
 
-    this.personDetails = this.persons[0];
-
   }
 
   onPersonClick(person) {
